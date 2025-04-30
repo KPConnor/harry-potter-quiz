@@ -6,12 +6,13 @@
 // Replace the placeholder values below with your ACTUAL Firebase config details
 // You get this from: Firebase Console -> Project settings -> General -> Your apps -> Web app -> SDK setup and configuration -> Config
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY", // Replace with your actual key
-  authDomain: "YOUR_AUTH_DOMAIN", // Replace with your actual domain
-  projectId: "YOUR_PROJECT_ID", // Replace with your actual project ID
-  storageBucket: "YOUR_STORAGE_BUCKET", // Replace with your actual bucket
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID", // Replace with your actual sender ID
-  appId: "YOUR_APP_ID" // Replace with your actual app ID
+  apiKey: "AIzaSyASpweJ1bRD8yKA4CPReXzC12wBZbYdKc8",
+  authDomain: "harry-potter-quiz-scores.firebaseapp.com",
+  projectId: "harry-potter-quiz-scores",
+  storageBucket: "harry-potter-quiz-scores.firebasestorage.app",
+  messagingSenderId: "651888601262",
+  appId: "1:651888601262:web:c03342f9eedf324398a53f",
+  measurementId: "G-WJY003DF68"
 };
 // --- END OF FIREBASE CONFIGURATION ---
 
