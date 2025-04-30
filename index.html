@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter Trivia Challenge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style for radio buttons */
+        input[type="radio"] {
+            margin-right: 0.5rem;
+        }
+        /* Style for highlighting correct answers in results */
+        .correct-answer-highlight {
+            color: #16a34a; /* Green */
+            font-weight: 600;
+        }
+        .user-answer-wrong {
+             text-decoration: line-through;
+             color: #dc2626; /* Red */
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-purple-200 via-indigo-200 to-blue-200 flex items-center justify-center min-h-screen p-4">
+
+    <div class="bg-white p-6 sm:p-10 rounded-xl shadow-xl w-full max-w-2xl">
+        <h1 class="text-3xl sm:text-4xl font-bold mb-8 text-center text-indigo-800">Harry Potter Trivia Challenge</h1>
+
+        <form id="quiz-form">
+            <div id="questions-container" class="space-y-8 mb-8">
+                </div>
+
+            <p id="validation-message" class="text-red-600 font-medium mb-4 h-6 text-center"></p>
+
+            <button type="submit" id="submit-button" class="w-full px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-150 ease-in-out">
+                Submit Answers
+            </button>
+        </form>
+
+        <div id="results-area" class="hidden mt-10 text-center">
+            <h2 class="text-2xl sm:text-3xl font-semibold mb-5 text-indigo-800">Quiz Results</h2>
+            <p id="score-text" class="text-xl sm:text-2xl mb-6 text-gray-700">You scored X out of Y!</p>
+
+            <div id="detailed-feedback" class="mt-6 text-left border-t pt-6 border-gray-300 space-y-4">
+                <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Review Your Answers:</h3>
+                </div>
+
+            <p id="save-status" class="text-sm font-medium h-6 mt-6"></p>
+
+            <button id="restart-button" class="mt-8 px-6 py-3 bg-gray-500 text-white font-semibold rounded-lg shadow-md hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 transition duration-150 ease-in-out">
+                 Try Again?
+             </button>
+        </div>
+
+    </div> <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+
+    <script src="quiz.js"></script>
+
+</body>
+</html>
